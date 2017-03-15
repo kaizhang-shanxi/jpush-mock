@@ -1,8 +1,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell   #-}
 module Push
-  ( RequestBody
+  ( RequestBody(..)
   , Response(..)
+  , Platform(..)
+  , Audience(..)
+  , CustomContent(..)
+  , Android(..)
+  , Notification(..)
+  , Options(..)
   ) where
 
 import           Data.Aeson
