@@ -15,5 +15,5 @@ docker-compose build
 cd jpush-mock
 docker-compose up -d  # 运行容器
 docker-compose port jpush-mock 1234  # 记下这个 hostPort
-curl http://127.0.0.1:${hostPort}/  # ${hostPort 为上一行命令的输出}
+curl http://127.0.0.1:${hostPort}/  # ${hostPort} 为上一行命令的输出
 ```
