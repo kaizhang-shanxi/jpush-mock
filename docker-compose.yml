@@ -2,14 +2,7 @@ version: '3'
 services:
     jpush-mock:
         build: .
-        image: jpush-mock
+        image: kaizhang91/jpush-mock
         command: jpush-mock
-        expose:
-            - "1234"
-    nginx:
-        build: ./nginx
-        image: nginx
         ports:
-            - "8080:80"
-        depends_on:
-            - jpush-mock
+            - "1234"
